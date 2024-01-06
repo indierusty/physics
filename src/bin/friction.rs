@@ -41,7 +41,7 @@ async fn main() {
         particle.add_force(push_force * PIXELS_PER_METER * 15.0);
 
         // drag force
-        let friction_force = generate_friction_force(particle.velocity, 0.5);
+        let friction_force = generate_friction_force(particle.velocity, 5.0);
         particle.add_force(friction_force * PIXELS_PER_METER);
         // println!("{:?}", particle.velocity.normalize());
 
